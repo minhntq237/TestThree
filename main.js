@@ -24,7 +24,7 @@ pointLight.position.set(20, 5, 5);
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
 
-const axesHelper = new THREE.AxesHelper( 5 );
+const axesHelper = new THREE.AxesHelper( 100 );
 scene.add( axesHelper );
 
 
