@@ -14,7 +14,7 @@ document.body.appendChild( renderer.domElement );
 
 renderer.render(scene, camera);
 
-const geometry = new THREE.BoxGeometry(24, 12, 4, 5, 5, 5);
+const geometry = new THREE.BoxGeometry(12, 24, 4, 5, 5, 5);
 const material = new THREE.MeshStandardMaterial( { color: 0xFF6347 } );
 const phone = new THREE.Mesh( geometry, material);
 
@@ -34,9 +34,9 @@ function rotatePhone() {
     let beta = event.beta;
     let gamma = event.gamma;
     
-    phone.rotation.x = alpha/100;
-    phone.rotation.y = beta/100;
-    phone.rotation.z = gamma/100;
+    phone.rotation.x += alpha/100;
+    /* phone.rotation.y = beta/100;
+    phone.rotation.z = gamma/100; */
 });
 }
 
