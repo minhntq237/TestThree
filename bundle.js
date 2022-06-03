@@ -25,6 +25,9 @@ pointLight.position.set(20, 5, 5);
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
 
+const axesHelper = new THREE.AxesHelper( 5 );
+scene.add( axesHelper );
+
 
 scene.add(pointLight, ambientLight)
 
@@ -34,7 +37,7 @@ function rotatePhone() {
     let beta = 2 * Math.PI * (event.beta / 360);
     let gamma = 2 * Math.PI * (event.gamma / 360);
     
-    phone.rotation.set(alpha, beta, gamma)
+    phone.rotation.set(0, 0, gamma)
     /* phone.rotation.y = beta/100;
     phone.rotation.z = gamma/100; */
 });
