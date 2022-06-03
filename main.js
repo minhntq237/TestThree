@@ -29,11 +29,11 @@ scene.add(pointLight, ambientLight)
 
 function rotatePhone() {
   window.addEventListener("deviceorientation", (event) => {
-    let alpha = event.alpha;
-    let beta = event.beta;
-    let gamma = event.gamma;
+    let alpha = 2 * Math.PI * (event.alpha / 360);
+    let beta = 2 * Math.PI * (event.beta / 360);
+    let gamma = 2 * Math.PI * (event.gamma / 360);
     
-    phone.rotateX(THREE.Math.degToRad(alpha));
+    phone.rotation.set(alpha, beta, gamma)
     /* phone.rotation.y = beta/100;
     phone.rotation.z = gamma/100; */
 });
