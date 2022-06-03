@@ -2,8 +2,9 @@
   "name": "testthree",
   "version": "1.0.0",
   "description": "",
-  "main": "bundle.js",
+  "main": "server.js",
   "dependencies": {
+    "express": "^4.18.1",
     "three": "^0.141.0"
   },
   "devDependencies": {},
