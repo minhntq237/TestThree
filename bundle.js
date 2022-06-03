@@ -34,7 +34,7 @@ function rotatePhone() {
     let beta = event.beta;
     let gamma = event.gamma;
     
-    phone.rotation.x = alpha/100;
+    phone.rotateX(THREE.Math.degToRad(alpha));
     /* phone.rotation.y = beta/100;
     phone.rotation.z = gamma/100; */
 });
