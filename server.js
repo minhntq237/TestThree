@@ -4,11 +4,11 @@ let app = express();
 var path = require('path')
 
 app.get('/index.html', (req, res) => {
-	res.sendFile(path.resolve('./DesktopClient/index.html'));
+	res.sendFile(path.resolve('index.html'));
 });
 
 app.get('/bundle.js', (req, res) => {
-	res.sendFile(path.resolve('./DesktopClient/bundle.js'));
+	res.sendFile(path.resolve('bundle.js'));
 });
 
 app.listen(8080, function (err) {
