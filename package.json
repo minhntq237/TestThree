@@ -1,0 +1,23 @@
+{
+  "name": "testthree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "dependencies": {
+    "three": "^0.141.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhntq237/TestThree.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minhntq237/TestThree/issues"
+  },
+  "homepage": "https://github.com/minhntq237/TestThree#readme"
+}
