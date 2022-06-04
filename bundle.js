@@ -37,7 +37,7 @@ function rotatePhone() {
     let beta = 2 * Math.PI * (event.beta / 360);
     let gamma = 2 * Math.PI * (event.gamma / 360);
     
-    phone.rotation.set(beta, gamma + Math.PI, alpha)
+    phone.rotation.set(beta, gamma + Math.PI/2, alpha)
 });
 }
 
