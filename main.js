@@ -30,16 +30,6 @@ scene.add( axesHelper );
 
 scene.add(pointLight, ambientLight)
 
-tempRotation = [0, 0, 0]
-
-window.addEventListener("deviceorientation", (event) => {
-  let alpha = 2 * Math.PI * (event.alpha / 360);
-  let beta = 2 * Math.PI * (event.beta / 360);
-  let gamma = 2 * Math.PI * (event.gamma / 360);
-
-  tempRotation = [beta, gamma, alpha]
-});
-
 function rotatePhone() {
   window.addEventListener("deviceorientation", (event) => {
     let alpha = 2 * Math.PI * (event.alpha / 360);
