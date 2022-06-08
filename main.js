@@ -31,16 +31,12 @@ scene.add( axesHelper );
 scene.add(pointLight, ambientLight)
 
 function rotatePhone() {
-  window.addEventListener("devicemotion", (event) => {
-    let alpha = 2 * Math.PI * (event.rotationRate.alpha / 360);
-    let beta = 2 * Math.PI * (event.rotationRate.beta / 360);
-    let gamma = 2 * Math.PI * (event.rotationRate.gamma / 360);
+  window.addEventListener("deviceorientation", (event) => {
+    let alpha = 2 * Math.PI * (event.alpha / 360);
+    let beta = 2 * Math.PI * (event.beta / 360);
+    let gamma = 2 * Math.PI * (event.gamma / 360);
 
-    /* phone.rotation.set(beta - Math.PI/2 ,0 , 0) */
-
-    phone.rotation.x += beta;
-    phone.rotation.y += gamma;
-    phone.rotation.z += alpha;
+    phone.rotation.set(beta - Math.PI/2 , gamma, alpha)
 });
 }
 
