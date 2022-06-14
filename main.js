@@ -28,7 +28,7 @@ const axesHelper = new THREE.AxesHelper( 100 );
 scene.add( axesHelper );
 
 
-scene.add(pointLight, ambientLight)
+scene.add(pointLight, ambientLight);
 
 function rotatePhone() {
   window.addEventListener("deviceorientation", (event) => {
@@ -36,7 +36,7 @@ function rotatePhone() {
     let beta = 2 * Math.PI * (event.beta / 360);
     let gamma = 2 * Math.PI * (event.gamma / 360);
 
-    phone.rotation.set(beta - Math.PI/2, gamma, alpha)
+    phone.rotation.set(new THREE.Vector3(beta, gamma, alpha))
 });
 }
 
