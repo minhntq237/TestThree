@@ -37,7 +37,7 @@ function rotatePhone() {
     let beta = 2 * Math.PI * (event.beta / 360);
     let gamma = 2 * Math.PI * (event.gamma / 360);
 
-    phone.rotation.set(new THREE.Vector3(beta, gamma, alpha))
+    phone.rotation.setFromVector3(new THREE.Vector3(beta, gamma, alpha))
 });
 }
 
